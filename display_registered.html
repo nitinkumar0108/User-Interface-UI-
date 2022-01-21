@@ -1,0 +1,26 @@
+{% extends 'layouts.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="text-center mt-5">Details of the user registered now</h1>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{data.first}}</td>
+            <td>{{data.last}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.password}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+{% endblock %}
